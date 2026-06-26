@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+namespace SalesWebMvc.Data;
 
 public class SalesWebMvcContext(DbContextOptions<SalesWebMvcContext> options) : DbContext(options)
 {
