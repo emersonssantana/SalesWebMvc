@@ -1,13 +1,19 @@
 ﻿@{
-    ViewData["Title"] = "Welcome";
+    ViewData["Title"] = "Home Page";
 }
 
+<div class="card p-4 mt-3">
+    <div class="text-center">
+        <h1 class="display-4">Welcome to SalesWebMvc</h1>
+        <p class="lead">An efficient solution for department management and sales records.</p>
 
-    <h1>@ViewData["Title"]</h1>
-    <p> @ViewData["message"]</p>
-    <p>Dev @ViewData["Dev"]</p>
+        <p class="text-muted mt-3">
+            <em>Project developed by: Emerson Souza Santana</em>
+        </p>
 
-<address>
-    <strong>More information: </strong> <a href="https://github.com/emersonssantana">github.com/emersonssantana</a>
-</address>
-
+        <div class="mt-4">
+            <a class="btn btn-primary" asp-controller="SalesRecords" asp-action="Index">View Sales</a>
+            <a class="btn btn-outline-secondary" asp-controller="Home" asp-action="About">About the Project</a>
+        </div>
+    </div>
+</div>

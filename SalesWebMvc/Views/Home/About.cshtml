@@ -1,14 +1,28 @@
 ﻿@{
     ViewData["Title"] = "About";
 }
-<h2>@ViewData["Title"]</h2>
-<h3>@ViewData["Message"]</h3>
 
-<p>Dev @ViewData["Dev"]</p>
+<div class="row">
+    <div class="col-12">
+        <div class="card p-4 mt-3">
+            <h3>@ViewData["Title"]</h3>
+            <p>This system was developed as part of my studies focused on the .NET ecosystem, aiming to practice essential concepts of MVC architecture, Entity Framework, and database integration.</p>
 
-<address>
-    <strong>More information: </strong> <a href="https://github.com/emersonssantana">github.com</a>
-</address>
+            <h4 class="mt-4">Technologies used:</h4>
+            <ul>
+                <li>C# / .NET</li>
+                <li>ASP.NET Core MVC</li>
+                <li>Entity Framework</li>
+                <li>MySQL</li>
+                <li>Bootstrap</li>
+            </ul>
 
+            <hr />
 
-
+            <strong>Developed by: Emerson Santana</strong><br />
+            <div class="mt-2">
+                <a href="https://github.com/emersonssantana/SalesWebMvc" target="_blank" class="btn btn-sm btn-dark">View Code on GitHub</a>
+            </div>
+        </div>
+    </div>
+</div>
