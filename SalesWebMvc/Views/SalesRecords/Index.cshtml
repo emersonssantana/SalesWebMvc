@@ -1,0 +1,65 @@
+﻿@{
+    ViewData["Title"] = "Sales Records";
+}
+
+<h2 class="mb-4">@ViewData["Title"]</h2>
+
+<div class="row">
+    <div class="col-md-6 mb-4">
+        <form asp-action="SimpleSearch">
+            <fieldset>
+                <legend class="mb-3">Simple search</legend>
+
+                <div class="row mb-3 align-items-center">
+                    <label for="minDate" class="col-sm-2 col-form-label text-start fw-bold">Min Date</label>
+                    <div class="col-sm-10">
+                        <input type="date" name="minDate" class="form-control" style="max-width: 320px;" />
+                    </div>
+                </div>
+
+                <div class="row mb-3 align-items-center">
+                    <label for="maxDate" class="col-sm-2 col-form-label text-start fw-bold">Max Date</label>
+                    <div class="col-sm-10">
+                        <input type="date" name="maxDate" class="form-control" style="max-width: 320px;" />
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-10 offset-sm-2">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-6 mb-4">
+        <form asp-action="GroupingSearch">
+            <fieldset>
+                <legend class="mb-3">Grouping search</legend>
+
+                <div class="row mb-3 align-items-center">
+                    <label for="minDate" class="col-sm-2 col-form-label text-start fw-bold">Min Date</label>
+                    <div class="col-sm-10">
+                        <input type="date" name="minDate" class="form-control" style="max-width: 320px;" />
+                    </div>
+                </div>
+
+                <div class="row mb-3 align-items-center">
+                    <label for="maxDate" class="col-sm-2 col-form-label text-start fw-bold">Max Date</label>
+                    <div class="col-sm-10">
+                        <input type="date" name="maxDate" class="form-control" style="max-width: 320px;" />
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-10 offset-sm-2">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</div>
